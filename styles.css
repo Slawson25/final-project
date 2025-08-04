@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #222;
+  cursor: pointer;
+}
+
+.sparkle-cursor {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd700, #fceabb);
+  pointer-events: none;
+  animation: sparkleFade 0.5s ease-out;
+  z-index: 9999;
+}
+
+@keyframes sparkleFade {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.5) translateY(-10px); opacity: 0; }
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+}
+
+
+/* Tablets and small desktops (min 768px) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Large desktops (min 1024px) */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  .hero img {
+    max-width: 800px;
+  }
+
+  .card-container {
+    justify-content: center;
+  }
+}
+
+/* Extra large screens / TVs (min 1920px) */
+@media screen and (min-width: 1920px) {
+  body {
+    font-size: 22px;
+    padding: 40px;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .pixie-btn {
+    font-size: 20px;
+    padding: 16px 32px;
+  }
+}
+
+/* This is the start of the cursor animation */
+
+.sparkle-drop {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #FFD700, #FCEABB);
+  animation: fallDust 2s linear forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes fallDust {
+  0% {
+    top: -20px;
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    top: 100vh;
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+/* This is where the cursor animation ends */
+
+.logo {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+}
+
+.pixie-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pixie-btn {
+  background-color: #fceabb;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.pixie-btn:hover {
+  background-color: #191970;
+  color: #FFD700;
+}
+
+
+.navbar {
+  background: #00457c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 60px;
+}
+
+/* this is the start of the top banner */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/*This is where the banner portion ends */
+
+.section {
+  padding: 40px 20px;
+}
+
+#movies h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#parks h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#games {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#fan-made {
+  color: white;
+}
+
+#videos {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* This is where the adjusting starts for the Movies, Parks section */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 250px;
+ padding: 15px;
+ background-color: #fff;
+ border-radius: 12px;
+ box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.explore-btn {
+ margin-top: auto;
+ padding: 10px 20px;
+ background-color: #0077cc;
+ color: white;
+ border: none;
+ border-radius: 6px;
+ cursor: pointer;
+ transition: background-color 0.3s;
+}
+
+.card h3 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.card img {
+ width: 100%;
+ height: 100%;
+ border-radius: 10px;
+}
+
+/*this is where the movie and parks section ends */
+
+footer {
+  background: #00457c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

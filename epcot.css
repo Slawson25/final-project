@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fan-made {
+    color: #fff;
+    gap: 10px;
+}
+
+#videos {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.name {
+    /*text-aligned: center;*/
+    padding-left: 600px;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #222;
+  
+}
+
+.sparkle-cursor {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd700, #fceabb);
+  pointer-events: none;
+  animation: sparkleFade 0.5s ease-out;
+  z-index: 9999;
+}
+
+@keyframes sparkleFade {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(0.5) translateY(-10px); opacity: 0; }
+}
+
+
+
+.logo {
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+}
+
+.navbar {
+  background: #00457c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 60px;
+}
+
+/* this is the start of the top banner */
+
+
+.hero {
+    width: 100vw;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.info {
+    text-indent: 15px;
+}
+
+.indent {
+    text-indent: 15px;
+}
+
+li {
+    text-indent: 20px;
+}
+
+footer {
+  background: #00457c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Tablets and small desktops (min 768px) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Large desktops (min 1024px) */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    padding: 30px;
+  }
+
+  .hero img {
+    max-width: 800px;
+  }
+
+  .card-container {
+    justify-content: center;
+  }
+}
+
+/* Extra large screens / TVs (min 1920px) */
+@media screen and (min-width: 1920px) {
+  body {
+    font-size: 22px;
+    padding: 40px;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+  }
+
+  .pixie-btn {
+    font-size: 20px;
+    padding: 16px 32px;
+  }
+}
+

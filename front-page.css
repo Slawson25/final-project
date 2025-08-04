@@ -1,0 +1,36 @@
+body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: #191970;
+      color: #FFD700;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      line-height: 1.8;
+    }
+
+    .enter-btn {
+      padding: 12px 28px;
+      font-size: 1.2rem;
+      background-color: #FFD700;
+      color: #191970;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 20px #FFD700;
+    }
+
+    .enter-btn:hover {
+      transform: scale(1.05);
+      background-color: #E6E6FA;
+      color: #FFD700;
+    }

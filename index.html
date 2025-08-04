@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disney Clone Fan Site</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+   <a href="index.html"> <img src="briar rabbit.png" alt="Fan Disney Logo" class="logo" /></a>
+    <p id="fan-made">Fan-made for CS50 • Not affiliated with Disney</p>
+  </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="videos/fireworks.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-text">
+      <h1>Discover New Worlds</h1>
+      <p>Explore magic, wonder, and adventure.</p>
+    </div>
+  </section>
+
+
+  <!-- Featured Movies -->
+  <section id="movies" class="section movies">
+    <h2>Featured Movies</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="walt-disney.jpg" alt="Tales of Epcot" />
+        <h3>Tale of Epcot</h3>
+        <a href="epcot.html"><button class="explore-btn">Watch Tales of Epcot</button></a>
+      </div>
+
+      <div class="card">
+        <img src="Disney-plans.jpg" alt="Magic Tales" />
+        <h3>Magic Tales</h3>
+        <a href="magic.html"><button class="explore-btn">Watch The Beginning</button></a>
+      </div>
+      <!-- Add more cards -->
+    </div>
+  </section>
+
+  <!-- Disney Parks -->
+  <section id="parks" class="section parks">
+    <h2>Disney Parks</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="disneyland.jpg" alt="DisneyLand" />
+        <h3>Disneyland</h3>
+        <button>Explore</button>
+      </div>
+       <div class="card-container">
+      <div class="card">
+        <img src="Disney World.jpg" alt="Disney World" />
+        <h3>Disney World</h3>
+        <button>Explore</button>
+      </div>
+       <div class="card-container">
+      <div class="card">
+        <img src="disney Paris.jpg" alt="Disney Paris" />
+        <h3>Disney Paris</h3>
+        <button>Explore</button>
+      </div>
+       <div class="card-container">
+      <div class="card">
+        <img src="disney Shanghai.jpg" alt="Disney Shanghai" />
+        <h3>Disney Shanghai</h3>
+        <button>Explore</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+  <section id="games" class="section games">
+    <h2>Games</h2>
+    <p>Play interactive Disney-style games (coming soon!)</p>
+  </section>
+
+  <!-- Video Section -->
+  <section id="videos" class="section videos">
+    <h2>Latest Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y5tR4SB12FM" allowfullscreen></iframe>
+  </section>
+
+  <button id="pixieRainBtn" class="btn btn-primary">Make It Rain Pixie Dust</button>
+
+
+   <!-- Pixie Dust Button -->
+  <section class="pixie-section">
+  <button id="magicButton" class="pixie-btn">Cast Pixie Dust</button>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Fan-made for CS50 • Not affiliated with Disney</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
